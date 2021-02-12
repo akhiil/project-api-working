@@ -15,6 +15,18 @@ const navigator = createStackNavigator({
   }
 });
 
+SearchScreen.navigationOptions = () => {
+  return {
+    headerShown: false
+  };
+};
+
+ResultsShowScreen.navigationOptions = () => {
+  return {
+    headerShown: false
+  };
+};
+
 export default createAppContainer(navigator);
 
 

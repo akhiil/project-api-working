@@ -10,7 +10,7 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
                 autoCapitalize="none"
                 autoCorrect={false}
                 style={styles.inputStyle}
-                placeholder="Search"
+                placeholder="Search Resturants and dishes"
                 value={term}
                 onChangeText={onTermChange}
                 onEndEditing={onTermSubmit}
@@ -21,13 +21,15 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
 
 const styles = StyleSheet.create({
     backgroundStyle: {
-      marginTop: 10,
-      backgroundColor: '#F0EEEE',
-      height: 50,
-      borderRadius: 5,
-      marginHorizontal: 15,
-      flexDirection: 'row',
-      marginBottom: 10
+        marginTop: 20,
+        backgroundColor: '#F0EEEE',
+        height: 50,
+        borderRadius: 20,
+        marginHorizontal: 15,
+        flexDirection: 'row',
+        marginBottom: 10,
+        borderColor: 'lightgray',
+        borderWidth: 2
     },
     inputStyle: {
         flex: 1,
@@ -38,6 +40,6 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginHorizontal: 15
     }
-  });
+});
 
 export default SearchBar;
